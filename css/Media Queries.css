@@ -1,0 +1,81 @@
+/* Responseve header  */
+@media (max-width: 767px) {
+    .header .logo {
+
+        width: 100%;
+        height: 50px;
+    }
+}
+.header .main-nav {
+    display: flex;
+}
+@media (max-width: 767px) {
+        .header .main-nav {
+        margin: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .header .main-nav {
+      margin: auto;
+    }
+  }
+
+@media (max-width: 767px) {
+    .header .main-nav > li > a {
+      padding: 10px;
+      font-size: 14px;
+      height: 40px;
+    }
+  }
+/* responsave mega menue */
+  @media (max-width: 767px) {
+    .header .mega-menu {
+      flex-direction: column;
+      gap: 0;
+      padding: 5px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .header .mega-menu .image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .header .mega-menu .links:first-of-type li:last-child {
+      border-bottom: 1px solid #e9e6e6;
+    }
+  }
+
+/* Responsabe landing page  */
+@media (max-width: 991px) {
+    .landing .text {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .landing .text h1 {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .landing .text p {
+      margin: 10px auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .landing .text p {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .landing .image {
+      display: none;
+    }
+  }
