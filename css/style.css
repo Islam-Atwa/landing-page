@@ -11,6 +11,10 @@
     --main-padding-top: 100px;
     --main-padding-bottom: 100px;
     --section-background: #ececec;
+    --linked-color:rgb(10, 102, 194);
+    --facebook-color:rgb(0 104 255);
+    --youtube-color:#dd2c00;
+    --twitter-color:rgba(15,20,25,1.00);
   }
   html {
     scroll-behavior: smooth;
@@ -563,4 +567,97 @@
   line-height: 1.7;
   color: #777;
   
+}
+
+/* Start Section Team members */
+.team{
+  position: relative;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+
+.team .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.team .box img{
+  border-radius: 10px;
+  width: 100%;
+  padding-right: 40px;
+  transition: var(--main-transition);
+  filter: grayscale(200%);
+}
+.team .box:hover img{
+  filter: grayscale(0);
+}
+.team .box {
+  position: relative;
+}
+
+.team .box::before,
+.team .box::after {
+  content: "";
+  background-color: #f3f3f3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.team .box::before {
+  width: calc(100% - 60px);
+  z-index: -2;
+}
+.team .box::after {
+  z-index: -1;
+  background-color: #e4e4e4;
+  width: 0;
+}
+.team .box:hover::after{
+  width: calc(100% - 60px);  
+}
+
+.team .box .data {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+.team .box .data .social a {
+  padding-right:10px ;
+  position: relative;
+  right: 25px;
+  top: 0;
+  padding-bottom: 50px;
+  width: 20px;
+  height: 40px;
+  color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team .box ul .fa-facebook:hover{
+  color: var(--facebook-color);
+}
+.team .box ul .fa-linkedin:hover{
+  color: var(--linked-color);
+}
+.team .box ul .fa-youtube:hover{
+  color: var(--youtube-color);
+}
+.team .box ul .fa-twitter:hover{
+  color: var(--twitter-color);
+}
+.team .info{
+  text-align:start;
+  margin-left: 80px;
+}
+.team .info h3{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.team .info p{
+  color: #777;
 }
