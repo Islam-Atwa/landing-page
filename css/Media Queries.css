@@ -87,3 +87,12 @@
   }
   
 }
+
+/* Responsave section HOW It Works  */
+@media (max-width :767px ) {
+  .info .box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
