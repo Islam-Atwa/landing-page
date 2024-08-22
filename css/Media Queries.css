@@ -56,56 +56,24 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 30444) {
     .landing .text h1 {
       font-size: 28px;
     }
   }
 
-  @media (max-width: 991px) {
-    .landing .text p {
-      margin: 10px auto;
-    }
-  }
 
-  @media (max-width: 767px) {
-    .landing .text p {
-      font-size: 18px;
-    }
-  }
 
-  @media (max-width: 991px) {
-    .landing .image {
-      display: none;
-    }
-  }
-
-/* Responseve header  */
-@media (max-width: 767px) {
-  .features .container{
-    row-gap: 75px;
-  }
-  
-}
-
-/* Responsave section HOW It Works  */
-@media (max-width :767px ) {
-  .info .box{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-}
 
 /* Responseve Event Section  */
 
-@media (max-width: 991px) {
+@media (max-width: 191px) {
   .events img {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 737px) {
   .events .subscribe form {
     max-width: 100%;
     padding: 20px;
